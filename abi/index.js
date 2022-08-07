@@ -1,5 +1,5 @@
-const flashswapv2 = require('./flashswapv2.json');
+const flashswapv2 = require("./flashswapv2.json");
 
 module.exports = {
-    flashswapv2,
+  flashswapv2,
 };

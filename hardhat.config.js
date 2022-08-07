@@ -16,15 +16,14 @@ const testnetKey = process.env.TESTNET_KEY;
 const bscscanKey = process.env.BSCSCAN_KEY;
 
 module.exports = {
-
   solidity: {
     version: "0.6.6",
     settings: {
       optimizer: {
         enabled: true,
-        runs: 200
-      }
-    }
+        runs: 200,
+      },
+    },
   },
   networks: {
     mainnet: {
@@ -48,18 +47,18 @@ module.exports = {
       chainId: 97,
       gas: "auto",
       gasPrice: "auto",
-    }
+    },
   },
   etherscan: {
-    apiKey: bscscanKey
+    apiKey: bscscanKey,
   },
   paths: {
     sources: "./contracts",
     tests: "./test",
     cache: "./cache",
-    artifacts: "./artifacts"
+    artifacts: "./artifacts",
   },
   mocha: {
-    timeout: 40000
-  }
-}
+    timeout: 40000,
+  },
+};

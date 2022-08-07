@@ -8,7 +8,9 @@ interface IERC20 {
      *
      * Returns a boolean value indicating whether the operation succeeded.
      */
-    function transfer(address recipient, uint256 amount) external returns (bool);
+    function transfer(address recipient, uint256 amount)
+        external
+        returns (bool);
 
     /**
      * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
